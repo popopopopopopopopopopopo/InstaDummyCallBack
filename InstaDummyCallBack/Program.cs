@@ -9,7 +9,7 @@ static class Program
 {
     static async Task Main(string[] args)
     {
-        // アプリケーションのクライアントID、クライアントシークレット、リダイレクトURLを設定します
+        // アプリケーションのクライアントID、リダイレクトURLを設定します
         var clientID = Environment.GetEnvironmentVariable("CLIENT_ID");
         // 待受URL(redirect先として渡す＆このURLで待ち受ける）
         var waitUrl = Environment.GetEnvironmentVariable("WAIT_URL");
