@@ -23,7 +23,7 @@ public class InstagramAuthMiddleware
             var postData = new
             {
                 code = code.ToString(),
-                hash = "nohanaInstagram"
+                hash = Environment.GetEnvironmentVariable("INSTA_API_HASH")
             };
 
             // Instagram APIにPOSTリクエストを送信
